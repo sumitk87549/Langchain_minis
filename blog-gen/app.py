@@ -8,7 +8,7 @@ from accelerate import init_empty_weights, load_checkpoint_and_dispatch
 
 model_path = "C:\\Users\\Sumit\\Desktop\\Langchain_Mini_projects\\Langchain_minis\\models\\llama3.1\\models--meta-llama--Meta-Llama-3.1-8B-Instruct\\snapshots\\5206a32e0bd3067aef1ce90f5528ade7d866253f"
 
-# token = "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"
+# token = ""
 # Load tokenizer
 tokenizer = AutoTokenizer.from_pretrained(
     model_path,
@@ -24,7 +24,7 @@ tokenizer = AutoTokenizer.from_pretrained(
 #     )
 model = AutoModelForCausalLM.from_pretrained(
     model_path,
-    torch_dtype=torch.float16,  # Use float16 if your GPU supports it
+    # torch_dtype=torch.float16,  # Use float16 if your GPU supports it
     device_map="auto",
     low_cpu_mem_usage=True,
     # use_auth_token=token
