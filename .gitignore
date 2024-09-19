@@ -161,3 +161,4 @@ cython_debug/
 #.idea/
 multi-pdf-chat/.env
 /multi-pdf-chat/.vector_store
+rag-adv/.env
